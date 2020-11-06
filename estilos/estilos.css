@@ -1,0 +1,78 @@
+@font-face {
+    font-family: sholp;
+    src: url(../fonts/shloprg.ttf)
+}
+
+#container {
+    width: 1200px;
+    height: 740px;
+    background-image: url(../img/fondi.jpg);
+    margin: auto;
+    position: relative;
+}
+
+body {
+    background-color: black;
+}
+
+#titulo {
+    position: absolute;
+    top: 30px;
+    left: 410px;
+    color: red;
+    font-family: sholp;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px orange;
+}
+
+#scream {
+    position: absolute;
+    top: 180px;
+    left: 260px;
+    visibility: hidden;
+    cursor: crosshair;
+}
+
+#luna {
+    /*border: solid 1px white;*/
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 110px;
+    left: 130px;
+    cursor: pointer;
+}
+
+#silueta {
+    position: absolute;
+    top: 370px;
+    left: 820px;
+    visibility: hidden;
+    cursor: url("../img/raygun.png"), crosshair;
+}
+
+#murcielago {
+    /*border: solid 1px white;*/
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 90px;
+    left: 975px;
+    cursor: pointer;
+}
+
+#carta {
+    position: absolute;
+    top: 640px;
+    left: 460px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+}
+
+#nota {
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    visibility: hidden;
+    cursor: pointer;
+}

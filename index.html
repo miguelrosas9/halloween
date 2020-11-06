@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween 2021</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="javascript/funciones.js"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <div id="container">
+
+        <audio id="grito">
+            <source src="sonidos/Jumpscare.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="evil_laugh">
+            <source src="sonidos/evil-laugh.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="campana">
+            <source src="sonidos/campana.mp3" type="audio/mpeg">
+        </audio>
+
+        <p id="titulo">Cuidado con lo que tocas...</p>
+        <img id="scream" src="img/Freddy.gif" height="400" onclick="ocultar('scream'); parar('grito')">
+        <div id="luna" onclick="mostrar('scream'); sonar('grito')"></div>
+
+        <img id="silueta" src="img/555.png" height="300" onclick="ocultar('silueta'); parar('campana')">
+        <div id="murcielago" onclick="mostrar('silueta'); sonar('campana')"></div>
+
+        <img id="carta" src="img/444.png" height="60" onclick="mostrar('nota'); sonar('evil_laugh')">
+        <img id="nota" src="img/888.png" height="400" onclick="ocultar('nota'); parar('evil_laugh')">
+
+    </div>
+</body>
+</html>
